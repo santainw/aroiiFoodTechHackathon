@@ -26,18 +26,21 @@ in folder aroiiFoodTechHackathon
 
 First step
 -open 3 terminal
+
 1.
 ```
 $cd /{you_fe_aroiiFoodTechHackathon_path}
 $npm install
 $npm start
 ```
+
 2.
 ```
 $cd /{you_be_aroiiFoodTechHackathon_path}
 $npm install
 $npm start
 ```
+
 3.
 ```
 $mongod
