@@ -1,0 +1,83 @@
+<style>
+    #navbar {
+               
+                position: fixed; /* Make it stick/fixed */
+                /* top: -50px; Hide the navbar 50 px outside of the top view */
+                width: 100%; /* Full width */
+                transition: top 0.5s; /* Transition effect when sliding down (and up) */
+                /* top: -30px; */
+                z-index: 1;
+            }
+</style>
+<div id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="opacity: 0.9;filter: alpha(opacity=200);">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          Aroii
+        </a>
+      </div>
+      <ul class="nav navbar-nav navbar-left">
+        <li class="active">
+          <a class="nav-item nav-link" href="#">
+            Home
+          </a>
+        </li>
+        <li>
+          <a class="nav-item nav-link" href="#">
+            About
+          </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" *ngIf="!isLoggedIn" >
+        <li>
+          <a class="nav-item nav-link" href="#">
+            <span class="glyphicon glyphicon-user">
+            </span>
+              Sign Up
+          </a>
+        </li>
+        <li>
+          <a class="nav-item nav-link" href="#" routerLink="{{ loginDirect }}">
+            <span class="glyphicon glyphicon-log-in">
+            </span>
+              Login
+          </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" *ngIf="isLoggedIn" >
+        <li>
+          <a class="nav-item nav-link" href="#">
+            <span class="glyphicon glyphicon-user">
+            </span>{{ name }}
+          </a>
+        </li>
+        <li>
+          <a class="nav-item nav-link" href="#" (click)="appService.logOut()">
+            <span class="glyphicon glyphicon-log-in">
+            </span>
+              Logout
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-80px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+</script>
+<br>
+<br>
+<br>
+<div class="main">
+<router-outlet></router-outlet>
+</div>

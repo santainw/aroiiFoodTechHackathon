@@ -1,0 +1,129 @@
+<div style="text-align: center;" >
+  <mat-card style="background-color: #24272A;color: white">
+      <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <img src="assets/john-wick.jpg" >
+            </div>
+            <div class="col-sm">
+                <h3>Jonh_wick</h3>
+                <p>Sing in as facebook</p>
+            </div>
+            <div class="col-sm">
+              <a href="/app-review">
+              <button  class="btn btn-warning">
+                Coupon
+              </button>
+              </a>
+            </div>
+          </div>
+        </div>
+  </mat-card>
+  <br>
+  <mat-card style="background-color: #24272A;color: white">
+      <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <h3>หมูไม่ไก่</h3>
+              <p><small>01/26/19</small></p>
+            </div>
+            <div class="col-sm">
+              <h4>หมูไม่ใหม่</h4>
+              <p><small>นายห้อยเพื่อนป้าวา โภชณา</small></p>
+            </div>
+            <div class="col-sm">
+                <h4>50 BTH</h4>
+                <p><small>12:30</small></p>
+            </div>
+          </div>
+        </div>
+  </mat-card>
+  <br>
+  <mat-card style="background-color: #24272A;color: white">
+      <h4>ประวัติการสั่งซื้อ</h4>
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">รายการ</th>
+              <th scope="col">จำนวน</th>
+              <th scope="col">ราคา</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <h5>กระเพราะไก่ดราก้อน</h5>
+                <small>01/15/19</small>
+              </td>
+              <td>
+                  <h5>1 จาน</h5>
+                  <small>ป้าวา ประตูน้ำ</small>
+              </td>
+              <td>
+                  <h5>50 BTH</h5>
+                  <small>07:30</small>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                    <h5>กระเพราะไก่ จอน</h5>
+                    <small>01/15/19</small>
+                  </td>
+                  <td>
+                      <h5>1 จาน</h5>
+                      <small>น้าป้าวา ประตูน้ำ</small>
+                  </td>
+                  <td>
+                      <h5>50 BTH</h5>
+                      <small>07:30</small>
+                  </td>
+            </tr>
+            <tr>
+                <td>
+                    <h5>กระเพราะไก่ บอล</h5>
+                    <small>01/15/19</small>
+                  </td>
+                  <td>
+                      <h5>1 จาน</h5>
+                      <small>น้องป้าวา ประตูน้ำ</small>
+                  </td>
+                  <td>
+                      <h5>50 BTH</h5>
+                      <small>07:30</small>
+                  </td>
+            </tr>
+          </tbody>
+        </table>
+  </mat-card>
+  <br>
+  <mat-card style="background-color: #24272A;color: white">
+    <a routerLink="/#">
+      <button mat-button data-toggle="modal" data-target="#exampleModal">
+        กดยืนยันการสั่งซื้อ
+      </button>
+      <br>
+    </a>
+    <a routerLink="/app-pre-order">
+      <button mat-button>
+          Back
+      </button>
+    </a>
+  </mat-card>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document" style="background-color: #24272A;color: black">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container">
+            <img src="assets/john-wick.jpg" style="width:400px; height:300px;">
+            </div>
+                <h3>ขอบคุณที่ John wick จาก hollywood ใช้บริการ</h3>
+          </div>
+          <div class="modal-footer" >
+              <button mat-button ><a href="/app-main">กดเพื่อกลับ</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <br>
+</div>
